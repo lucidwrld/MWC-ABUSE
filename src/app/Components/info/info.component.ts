@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-info',
@@ -7,6 +8,7 @@ import { Component } from '@angular/core';
 })
 export class InfoComponent {
 
+  constructor(private router: Router) {}
   activeOption: string = 'mostComm'; // Default active option
 
  
@@ -21,5 +23,8 @@ export class InfoComponent {
     this.mostComm = false;
     this.activeOption = 'mostSev';
     this.mostSevere = true
+  }
+  navigateToPhysicalAbusePage() {
+    this.router.navigate(['/physicalAB']);
   }
 }
