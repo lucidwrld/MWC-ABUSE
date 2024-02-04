@@ -1,0 +1,75 @@
+<div class="reportPage">
+    <div class="main">
+        <h1 class="title">Report Details</h1>
+        <h1 class="subTitle">Abuse Category</h1>
+        <select name="" id="" class="abuseCate" >
+            <option value="" >Select the abuse category</option>
+            <option value="" >Sexual Abuse</option>
+            <option value="" >Physical Abuse</option>
+            <option value="" >Child Abuse</option>
+            <option value="" >Elder Abuse</option>
+        </select>
+        <div class="miniForm">
+            <div class="contForm">
+                <h1 class="label">Email Address</h1>
+                <div class="bottom">
+                    <input class="details " placeholder="your@email" />
+                </div>
+            </div>
+            <div class="contForm">
+                <h1 class="label">Phone Number</h1>
+                <div class="bottom">
+                    <input class="details " placeholder="09023456789" />
+                </div>
+            </div>
+            <div class="contForm">
+                <h1 class="label">Full Name</h1>
+                <div class="bottom">
+                    <input class="details " placeholder="Ajibile Damilola Esther" />
+                </div>
+            </div>
+            <div class="contForm">
+                <h1 class="label">Date Of Birth</h1>
+                <div class="bottom">
+                    <input type="date" class="details " />
+                </div>
+            </div>
+            <div class="contForm">
+                <h1 class="label">Location</h1>
+                <div class="bottom">
+                    <input class="details " placeholder="22, abcd street" />
+                </div>
+            </div>
+            <div class="contForm">
+                <h1 class="label">Gender of Victim</h1>
+                <div class="bottomG">
+                    <label class="radi">
+                        <input class="radiio" type="radio" name="gender" value="male"> Male
+                      </label>
+                      <label class="radi">
+                        <input class="radiio" type="radio" name="gender" value="female"> Female
+                      </label>
+                      <label class="radi">
+                        <input class="radiio" type="radio" name="gender" value="prefer not to say"> Prefer not to say
+                      </label>
+                </div>
+            </div>
+            
+        </div>
+        <textarea class="caseDescription" name="" id="" placeholder="Case Description"></textarea>
+        <div class="evidence">
+            <h1 class="eviTitle">Do you have evidence?</h1>
+            <h2 class="eviDet">Upload any evidence you have. If not, proceed to submit.</h2>
+            <input type="file" id="fileInput" class="file-input" (change)="onFileSelected($event)">
+            <label for="fileInput" class="custom-button">
+                {{ selectedFileName ? 'File Uploaded: ' + selectedFileName : 'Upload File' }}
+                <i class="fas fa-upload" *ngIf="!selectedFileName"></i>
+              </label>
+        </div>
+        <div class="end">
+            <button class="submit">
+                <h1 class="subText">Submit</h1>
+            </button>
+        </div>
+    </div>
+</div>

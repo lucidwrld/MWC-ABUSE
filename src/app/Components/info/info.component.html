@@ -1,0 +1,165 @@
+<div class="infoPage">
+    <div class="top">
+        <h1 class="title">Abuse Topics</h1>
+        <div class="optionDiv">
+            <button class="option1 active" [ngClass]="{'active': activeOption === 'mostComm'}" (click)="toggleMostComm()"><h1 class="insideText">Most Common</h1></button>
+            <button class="option1" [ngClass]="{'active': activeOption === 'mostSev'}" (click)="toggleMostSev()"><h1 class="insideText">Most Severe</h1></button>
+        </div>
+       
+    </div>
+    <div class="contain">
+        <div class="mostComm" *ngIf="mostComm">
+            <div class="conTent">
+                <img src="../../../assets/images/physicalabuse.jpg" alt="" class="Img">
+                <div class="conTT">
+                    <h1 class="conHead">Physical Abuse</h1>
+                    <h1 class="conMiniHead">Involves the intentional use of force causing injury or bodily harm. This can include hitting, slapping, punching, or any form of physical harm.</h1>
+                    <div class="bot">
+                        <button class="view">
+                            <h1 class="viewText">View More</h1>
+                        </button>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="conTent">
+                <img src="../../../assets/images/emotionalabuse.jpg" alt="" class="Img">
+                <div class="conTT">
+                    <h1 class="conHead">Emotional Abuse</h1>
+                    <h1 class="conMiniHead">Inflicts emotional trauma through manipulation, humiliation, intimidation, or constant criticism. It undermines an individual's self-worth and mental well-being.</h1>
+                    <div class="bot">
+                        <button class="view">
+                            <h1 class="viewText">View More</h1>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="conTent">
+                <img src="../../../assets/images/sexualabuse.jpg" alt="" class="Img">
+                <div class="conTT">
+                    <h1 class="conHead">Sexual Abuse</h1>
+                    <h1 class="conMiniHead">Involves non-consensual sexual activities or coercion, including rape, molestation, or any unwanted sexual advances. This type of abuse violates personal boundaries and can have severe psychological consequences.</h1>
+                    <div class="bot">
+                        <button class="view">
+                            <h1 class="viewText">View More</h1>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="conTent">
+                <img src="../../../assets/images/childabuse.jpg" alt="" class="Img">
+                <div class="conTT">
+                    <h1 class="conHead">Child Abuse</h1>
+                    <h1 class="conMiniHead">Encompasses physical, emotional, or sexual maltreatment of a child. Child abuse can impede healthy development and leave lasting emotional scars.</h1>
+                    <div class="bot">
+                        <button class="view">
+                            <h1 class="viewText">View More</h1>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="conTent">
+                <img src="../../../assets/images/verbalabuse.jpg" alt="" class="Img">
+                <div class="conTT">
+                    <h1 class="conHead">Verbal Abuse</h1>
+                    <h1 class="conMiniHead">
+                        Involves the use of words to belittle, degrade, or threaten. Verbal abuse can include yelling, name-calling, and constant criticism, eroding an individual's self-esteem.
+                        </h1>
+                    <div class="bot">
+                        <button class="view">
+                            <h1 class="viewText">View More</h1>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="conTent">
+                <img src="../../../assets/images/elderabuse.jpg" alt="" class="Img">
+                <div class="conTT">
+                    <h1 class="conHead">Elder Abuse</h1>
+                    <h1 class="conMiniHead">Involves harming or exploiting an older person, often in a caregiving or familial relationship. Elder abuse can manifest as physical, emotional, financial, or neglectful mistreatment.</h1>
+                    <div class="bot">
+                        <button class="view">
+                            <h1 class="viewText">View More</h1>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="conTent">
+                <img src="../../../assets/images/stalking.webp" alt="" class="Img">
+                <div class="conTT">
+                    <h1 class="conHead">Stalking</h1>
+                    <h1 class="conMiniHead">Persistent and unwanted attention, harassment, or surveillance directed towards an individual. Stalking can occur in person or through various forms of communication, such as online stalking.</h1>
+                    <div class="bot">
+                        <button class="view">
+                            <h1 class="viewText">View More</h1>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="conTent">
+                <img src="../../../assets/images/spiritualabuse.jpg" alt="" class="Img">
+                <div class="conTT">
+                    <h1 class="conHead">Spiritual Abuse</h1>
+                    <h1 class="conMiniHead">Manipulation or misuse of spiritual beliefs and practices to control or harm others. This form of abuse can involve coercive religious practices, exploitation of faith, or the imposition of spiritual authority for harmful purposes.</h1>
+                    <div class="bot">
+                        <button class="view">
+                            <h1 class="viewText">View More</h1>
+                        </button>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="mostSevere" *ngIf="mostSevere">
+            <div class="conTent">
+                <img src="../../../assets/images/physicalabuse.jpg" alt="" class="Img">
+                <div class="conTT">
+                    <h1 class="conHead">Domestic Abuse</h1>
+                    <h1 class="conMiniHead">Involves the intentional use of force causing injury or bodily harm. This can include hitting, slapping, punching, or any form of physical harm.</h1>
+                    <div class="bot">
+                        <button class="view">
+                            <h1 class="viewText">View More</h1>
+                        </button>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="conTent">
+                <img src="../../../assets/images/sexualabuse.jpg" alt="" class="Img">
+                <div class="conTT">
+                    <h1 class="conHead">Rape</h1>
+                    <h1 class="conMiniHead">Inflicts emotional trauma through manipulation, humiliation, intimidation, or constant criticism. It undermines an individual's self-worth and mental well-being.</h1>
+                    <div class="bot">
+                        <button class="view">
+                            <h1 class="viewText">View More</h1>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="conTent">
+                <img src="../../../assets/images/childabuse.jpg" alt="" class="Img">
+                <div class="conTT">
+                    <h1 class="conHead">Child Abuse</h1>
+                    <h1 class="conMiniHead">Involves non-consensual sexual activities or coercion, including rape, molestation, or any unwanted sexual advances. This type of abuse violates personal boundaries and can have severe psychological consequences.</h1>
+                    <div class="bot">
+                        <button class="view">
+                            <h1 class="viewText">View More</h1>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="conTent">
+                <img src="../../../assets/images/elderabuse.jpg" alt="" class="Img">
+                <div class="conTT">
+                    <h1 class="conHead">Elder Abuse</h1>
+                    <h1 class="conMiniHead">Encompasses physical, emotional, or sexual maltreatment of a child. Child abuse can impede healthy development and leave lasting emotional scars.</h1>
+                    <div class="bot">
+                        <button class="view">
+                            <h1 class="viewText">View More</h1>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

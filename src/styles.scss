@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400; /* regular */
+    src: url('./assets/fonts/source-sans-pro.regular.ttf') format('truetype'); 
+  }
+  
+  /* You can add additional font weights and styles as needed */
+  @font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700; /* For bold */
+    src: url('./assets/fonts/source-sans-pro.bold.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 200; /* For light */
+    src: url('./assets/fonts/source-sans-pro.light.ttf') format('truetype');
+  }
+
+@import '~@fortawesome/fontawesome-free/css/all.css';

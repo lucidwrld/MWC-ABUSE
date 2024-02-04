@@ -1,0 +1,234 @@
+.reportPage{
+    background-color: #1e1e1e;
+    width: 100%;
+    height: 2000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .main{
+        width: 100%;
+        height: 100%;
+        margin-left: 50px;
+        margin-right: 50px;
+        background-color: transparent;
+        .title{
+            width: fit-content;
+            height: fit-content;
+            color: #fff;
+            font-size: 32px;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 700;
+        }
+        .subTitle{
+            width: fit-content;
+            height: fit-content;
+            color: #fff;
+            font-size: 30px;
+            margin-top: 100px;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 700;
+        }
+        .abuseCate{
+            width: 276px;
+            height: 49px;
+            border-radius: 24px;
+            background-color: #800080;
+            outline: none;
+            border: 0;
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 400;
+        }
+        .miniForm{
+            margin-top: 53px;
+            height: 535px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 53px;
+            .contForm{
+                background-color: #1e1e1e;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .label{
+                    width: fit-content;
+                    height: fit-content;
+                    color: #fff;
+                    margin: 0;
+                    font-size: 24px;
+                    text-align: center;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-weight: 700;
+                }
+                .bottom{
+                    width: 100%;
+                    height: 88px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    .details{
+                        width: 100%;
+                        height: 100%;
+                        background-color: #373737;
+                        outline: none;
+                        border: 0;
+                        padding: 0;
+                        border-radius: 24px;
+                        text-align: left;
+                        text-indent: 27px;
+                        color: #C0C0C0;
+                        font-size: 20px;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-weight: 400;
+                    }
+                }
+                .bottomG{
+                    width: 100%;
+                    height: 88px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    .radi{
+                        color: #fff;
+                    margin: 0;
+                    font-size: 20px;
+                    text-align: center;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-weight: 400;
+                    input[type="radio"] {
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                        border-radius: 50%;
+                        width: 16px;
+                        height: 16px;
+                        border: 2px solid #800080; /* Set your desired color */
+                        outline: none;
+                        display: inline-block;
+                        position: relative;
+                      }
+                      
+                      /* Change the color of the checked radio button */
+                      input[type="radio"]:checked {
+                        background-color: #800080; /* Set your desired color */
+                      }
+                    }
+                }
+            }
+        }
+        .caseDescription{
+            margin-top: 109px;
+            width: 95%;
+            height: 480px;
+            background-color: #373737;
+            outline: none;
+            border: 0;
+            border-radius: 24px;
+            padding-left: 27px;
+            padding-right: 27px;
+            color: #C0C0C0;
+            font-size: 20px;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 400;
+        }
+        .evidence{
+            width: 100%;
+            height: 300px;
+            margin-top: 57px;
+            background-color: #373737;
+            border-radius: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .eviTitle{
+                color: #fff;
+                font-size: 24px;
+                margin-left: 27px;
+                text-align: left;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 700;
+            }
+            .eviDet{
+                color: #fff;
+                font-size: 18px;
+                margin-left: 27px;
+                text-align: left;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 400;
+            }
+            .custom-file-input {
+                position: relative;
+                display: inline-block;
+              }
+              
+              /* Styles for the actual file input */
+              .file-input {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                width: 272px;
+                height: 69px;
+                cursor: pointer;
+              }
+              
+              /* Styles for the custom button */
+              .custom-button {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-left: 27px;
+                width: 272px;
+                height: 69px;
+                border-radius: 24px;
+                background-color: #800080;
+                color: #fff;
+                font-size: 20px;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 700;
+                cursor: pointer;
+                .fa-upload{
+                    margin-left: 10px;
+                }
+              }
+        }
+        .end{
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: right;
+            align-items: center;
+            height: 150px;
+            .submit{
+                width: 170px;
+                height: 58px;
+                cursor: pointer;
+                border-radius: 24px;
+                background-color: #800080;
+                outline: none;
+                border: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .subText{
+                    margin: 0;
+                    color: #fff;
+                    font-size: 20px;
+                    text-align: center;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-weight: 400;
+
+                }
+            }
+        }
+    }
+}
