@@ -27,4 +27,25 @@ export class InfoComponent {
   navigateToPhysicalAbusePage() {
     this.router.navigate(['/physicalAB']);
   }
+  navigateToEmotionalAbusePage() {
+    this.router.navigate(['/emotionalAB']);
+  }
+  navigateToSexualAbusePage() {
+    this.router.navigate(['/sexualAB']);
+  }
+  navigateToChildAbusePage() {
+    this.router.navigate(['/childAB']);
+  }
+  navigateToVerbalAbusePage() {
+    this.router.navigate(['/verbalAB']);
+  }
+  navigateToElderAbusePage() {
+    this.router.navigate(['/elderAB']);
+  }
+  navigateToStalkingPage() {
+    this.router.navigate(['/stalkingAB']);
+  }
+  navigateToSpiritualAbusePage() {
+    this.router.navigate(['/spiritualAB']);
+  }
 }

@@ -1,0 +1,242 @@
+.stalkingPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 2829px;
+    background-color: #1e1e1e;
+    .contain{
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .title{
+            color: #fff;
+            font-size: 48px;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 700;
+            margin: 0;
+            margin-top: 24px;
+            margin-left: 50px;
+    
+            span{
+                color: #800080;
+            }
+        }
+        .top{
+            height: 298px;
+            width: 800px;
+            margin-top: 37px;
+            margin-left: 50px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            div{
+                width: 564px;
+                height: 275px;
+                border-radius: 24px;
+                position: absolute;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            .up{
+                margin-top: 0px;
+                margin-left: 0px;
+                background-color: #fff;
+            }
+            .middle{
+                margin-top: 16px;
+                margin-left: 18px;
+                background-color: #800080;
+            }
+            .bot{
+                margin-top: 32px;
+                margin-left: 36px;
+                background-color: #000;
+                .note{
+                    width: 498px;
+                    color: #fff;
+                    font-size: 25px;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-weight: 700;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    
+    .semiTop{
+        margin-top: 37px;
+        height: 304px;
+        width: calc(100% - 100px);
+        border-radius: 24px;
+        background-image: url(../../../../assets/images/keke.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -620px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .reportH1{
+            color: #fff;
+                    font-size: 40px;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-weight: 700;
+                    margin: 0;
+        }
+        .minireportH1{
+            color: #fff;
+                    font-size: 20px;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-weight: 700;
+                    margin: 0;
+                    margin-top: 18px;
+        }
+    }
+    .middleTop{
+        margin-top: 53px;
+        height: 1960px;
+        width: calc(100% - 100px);
+        background-color: #373737;
+        border-radius: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .content{
+            height: calc(100% - 56px);
+            width: calc(100% - 56px);
+            display: flex;
+            flex-direction: column;
+            .headerr{
+                color: #fff;
+                    font-size: 24px;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-weight: 700;
+                    margin: 0;
+            }
+            .miniHeader{color: #fff;
+                font-size: 32px;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 700;
+                margin: 0;
+                margin-top: 18px;
+            }
+            .firstList{
+                margin: 0;
+                padding: 0;
+                margin-top: 28px;
+                width: 100%;
+                min-height: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                color: #fff;
+                margin-bottom: 28px;
+                font-size: 20px;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 700;
+                li{
+                margin-left: 39px;
+                    list-style:disc;
+                    .innerList{
+                        margin: 0;
+                        padding: 0;
+                        margin-top: 8px;
+                        width: 100%;
+                        min-height: 30px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        color: #fff;
+                        font-size: 20px;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-weight: 700;
+                        li{
+                        margin-left: 39px;
+                            list-style:disc;
+                            
+                        }
+                    }
+                }
+            }
+            .secondList{
+                margin: 0;
+                padding: 0;
+                margin-top: 28px;
+                width: 100%;
+                height: 450px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                color: #fff;
+                font-size: 20px;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 700;
+                li{
+                margin-left: 39px;
+                    list-style:disc;
+                    .innerList{
+                        margin: 0;
+                        padding: 0;
+                        margin-top: 8px;
+                        width: 100%;
+                        min-height: 30px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        color: #fff;
+                        font-size: 20px;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-weight: 700;
+                        li{
+                        margin-left: 39px;
+                            list-style:disc;
+                            
+                        }
+                    }
+                }
+            }
+            .thirdList{
+                margin: 0;
+                padding: 0;
+                margin-top: 28px;
+                width: 100%;
+                height: 850px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                color: #fff;
+                font-size: 20px;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 700;
+                li{
+                margin-left: 39px;
+                margin-bottom: 8px;
+                    list-style:disc;
+                    .innerList{
+                        margin: 0;
+                        padding: 0;
+                        margin-top: 8px;
+                        width: 100%;
+                        min-height: 30px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        color: #fff;
+                        font-size: 20px;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-weight: 700;
+                        li{
+                        margin-left: 39px;
+                            list-style:disc;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
