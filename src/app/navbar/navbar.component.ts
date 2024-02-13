@@ -15,7 +15,7 @@ export class NavbarComponent {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         // Check if the current route is the login page
-        if (event.url === '/adminlogin' || event.url === '/business'|| event.url === '/individual'|| event.url === '/education') {
+        if (event.url === '/adminlogin' || event.url === '/loading' || event.url.includes('/admincomponent')) {
           this.showNavbar = false; 
         }
             else{

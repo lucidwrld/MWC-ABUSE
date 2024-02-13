@@ -1,0 +1,48 @@
+<div class="case">
+    <div class="top">
+        <div class="button">
+            <input type="text" class="inp" placeholder="Search Abuse Cases">
+            <button class="btns">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+    </div>
+    <div class="header">
+        <h1>Abuse Cases</h1>
+    </div>
+    <div class="middle" >
+        <div class="sor">
+            <button class="btns">
+                <h1>Date</h1>
+            </button>
+            <button class="btns">
+                <h1>Type</h1>
+            </button>
+        </div>
+    </div>
+    <ul class="main">
+        <li *ngFor="let case of Report">
+            <div class="first">
+                <img src="../../../../../assets/images/profil.jpg" alt="">
+                <div class="nam">
+                    <h1>Case Type: {{case.category}}</h1>
+                    <h1>Name: {{case.fullname}}</h1>
+                </div>
+            </div>
+            <div class="second">
+                <h1>Date: {{case.date}}</h1>
+                <h1>Phone No: {{case.phone}}</h1>
+            </div>
+
+            <a [routerLink]="['/admincomponent/admindetails/', case.$key]">
+                <button class="detai">
+                    <h1>
+                        View Details
+                    </h1>
+                </button>
+            </a>
+            
+        </li>
+        
+    </ul>
+</div>

@@ -1,0 +1,53 @@
+.contain{
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+    
+.containerBeam{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+.beam{
+    position: absolute;
+    background-color: #800080;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;  
+  animation: pulse 1.5s ease-out infinite;
+  
+.point{
+    position: absolute;
+    background-color: #800080;
+    width: 113px;
+    height:113px;
+    border-radius: 50%;  
+}
+}
+}
+}
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }

@@ -1,0 +1,13 @@
+<div class="sidebar">
+    <div class="buttons">
+        <button class="btns" [ngClass]="{'active': activeOption === 'tao'}" (click)="navigateToDashPage()">
+            <i class="fa fa-tachometer-alt"></i>
+        </button>
+        <button class="btns" [ngClass]="{'active': activeOption === 'th'}" (click)="navigateToCasesPage()">
+            <i class="fa fa-th-list"></i>
+        </button>
+        <button class="logs" (click)="navigateToLoginPage()">
+            <h1>Logout</h1>
+        </button>
+    </div>
+</div>

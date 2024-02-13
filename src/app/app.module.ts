@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -18,7 +17,14 @@ import { VerbalAbuseComponent } from './Components/InfoDetails/verbal-abuse/verb
 import { ElderAbuseComponent } from './Components/InfoDetails/elder-abuse/elder-abuse.component';
 import { StalkingComponent } from './Components/InfoDetails/stalking/stalking.component';
 import { SpiritualAbuseComponent } from './Components/InfoDetails/spiritual-abuse/spiritual-abuse.component';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from 'src/environments/environment.prod';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { ToastrModule } from 'ngx-toastr';
+import { LoadingScreenComponent } from './loading-screen/loading-screen.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AdminModule } from './Components/Admin/admin-component/admin.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,11 +42,21 @@ import { SpiritualAbuseComponent } from './Components/InfoDetails/spiritual-abus
     VerbalAbuseComponent,
     ElderAbuseComponent,
     StalkingComponent,
-    SpiritualAbuseComponent
+    SpiritualAbuseComponent,
+    LoadingScreenComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    AdminModule,
+    HttpClientModule,
+    FormsModule,
+    ToastrModule.forRoot(),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule,
+
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

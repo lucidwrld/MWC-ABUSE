@@ -14,6 +14,7 @@ import { VerbalAbuseComponent } from './Components/InfoDetails/verbal-abuse/verb
 import { ElderAbuseComponent } from './Components/InfoDetails/elder-abuse/elder-abuse.component';
 import { StalkingComponent } from './Components/InfoDetails/stalking/stalking.component';
 import { SpiritualAbuseComponent } from './Components/InfoDetails/spiritual-abuse/spiritual-abuse.component';
+import { AdminComponent } from './Components/Admin/admin-component/admin-component.component';
 const routes: Routes = [
   { path: '', component: HomepageComponent },
   { path: 'report', component: ReportpageComponent },

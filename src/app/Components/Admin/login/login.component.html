@@ -13,20 +13,20 @@
                 Prevention <br />
                 Platform</h1>
         </div>
-        <div class="main">
+        <form class="main" autocomplete="off" [formGroup]="loginForm" (ngSubmit)="login()">
             <h1 class="header">Log in</h1>
             <div class="conForm">
                 <label for="" class="label">Administrator Username</label>
-                <input type="text" class="input" placeholder="Enter your username" />
+                <input type="text" class="input" placeholder="Enter your username" formControlName="username" />
             </div>
             <div class="conForm">
                 <label for="" class="label">Password</label>
-                <input type="password" class="input" placeholder="**************" />
+                <input type="password" class="input" placeholder="**************" formControlName="password" />
             </div>
             <input type="submit" class="login" value="Log In">
             <button class="home" (click)="navigateToHomePage()">
                 <h1 class="hom">Home</h1>
             </button>
-        </div>
+        </form>
     </div>
 </div>
