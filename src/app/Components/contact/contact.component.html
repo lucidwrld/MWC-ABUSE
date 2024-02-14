@@ -1,29 +1,31 @@
-<div class="contactPage">
+<app-loading-screen *ngIf="isLoading"></app-loading-screen>
+
+<form (ngSubmit)="handleSubmit()" [formGroup]="form"  novalidate class="contactPage" *ngIf="isNorm">
     <h1 class="title">Contact Us / Feedback</h1>
     <div class="middle">
-        <div class="left">
+        <div  class="left">
             <div class="contForm">
                 <h1 class="label">Full Name</h1>
                 <div class="bottom">
-                    <input class="details " placeholder="Your Name" />
+                    <input class="details " placeholder="Your Name" required formControlName="name" name="name" />
                 </div>
             </div>
             <div class="contForm">
                 <h1 class="label">Email</h1>
                 <div class="bottom">
-                    <input class="details " placeholder="Your Email" />
+                    <input class="details " placeholder="Your Email" required formControlName="email" name="email" />
                 </div>
             </div>
             <div class="contForm">
                 <h1 class="label">Subject </h1>
                 <div class="bottom">
-                    <input class="details " placeholder="Subject" />
+                    <input class="details " placeholder="Subject" required formControlName="subject" name="subject"/>
                 </div>
             </div>
             <div class="contMForm">
                 <h1 class="label">Message </h1>
                 <div class="bottom">
-                    <textarea class="details " placeholder="Message" ></textarea>
+                    <textarea class="details " placeholder="Message" required formControlName="message" name="message"></textarea>
                 </div>
             </div>
         </div>
@@ -33,8 +35,8 @@
         </div>
     </div>
     <div class="end">
-        <button class="submit">
-            <h1 class="subText">Submit</h1>
+        <button value="submit" class="submit" [disabled]="loading || !form.valid" >
+            <h1 class="subText">{{ loading ? 'Sending...' : 'Send' }}</h1>
         </button>
     </div>
-</div>
+</form>
