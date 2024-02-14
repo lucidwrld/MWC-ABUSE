@@ -1,7 +1,7 @@
 <div class="case">
     <div class="top">
         <div class="button">
-            <input type="text" class="inp" placeholder="Search Abuse Cases">
+            <input type="text" class="inp" placeholder="Search Abuse Cases" [(ngModel)]="searchText">
             <button class="btns">
                 <i class="fa fa-search"></i>
             </button>
@@ -12,16 +12,16 @@
     </div>
     <div class="middle" >
         <div class="sor">
-            <button class="btns">
+            <button class="btns" (click)="openDatePicker()">
                 <h1>Date</h1>
             </button>
-            <button class="btns">
-                <h1>Type</h1>
-            </button>
+            <div *ngIf="isCalendarVisible" class="calendar-container">
+                <input type="date" [(ngModel)]="searchDate"  (change)="selectDate()">
+            </div>
         </div>
     </div>
     <ul class="main">
-        <li *ngFor="let case of Report">
+        <li *ngFor="let case of filteredCases">
             <div class="first">
                 <img src="../../../../../assets/images/profil.jpg" alt="">
                 <div class="nam">

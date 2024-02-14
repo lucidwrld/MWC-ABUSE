@@ -43,7 +43,6 @@
                 background-color: transparent;
                 outline: none;
                 border: 0;
-                cursor: pointer;
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
@@ -80,7 +79,7 @@
         justify-content: right;
         border-bottom: 1px solid #fff;
         .sor{
-            width: 206px;
+            width: 88px;
             height: 40px;
             display: flex;
             flex-direction: row;
@@ -102,6 +101,20 @@
                 font-size: 15px;
                 font-family: 'Source Sans Pro', sans-serif;
                 font-weight: 700; 
+                }
+            }
+            .calendar-container{
+                position: absolute;
+                width: fit-content;
+                height: fit-content;
+                input{
+                    width: 88px;
+                    height: 40px;
+                    border-radius: 24px;
+                    border: 0;
+                    outline: none;
+                    color: #fff;
+                    background-color: #800080;
                 }
             }
         }

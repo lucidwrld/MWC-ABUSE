@@ -27,6 +27,7 @@ import { AdmindetailsComponent } from './admindetails/admindetails.component';
     BrowserModule,
     HttpClientModule,
     FormsModule,
+    
     ReactiveFormsModule,
     ToastrModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebaseConfig),
