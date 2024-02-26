@@ -7,8 +7,19 @@ import { Component, OnInit } from '@angular/core';import { Router, NavigationEnd
 export class NavbarComponent {
   constructor(private router: Router) {}
   showNavbar: boolean = true;
+
+
+
+  showMenu: boolean = false
+  showMenuu(){
+    this.showMenu = true
+  }
+  closeMenu(){
+    this.showMenu = false
+  }
   // Function to navigate to the report page
   navigateToReportPage() {
+
     this.router.navigate(['/report']);
   }
   ngOnInit() {
@@ -24,6 +35,7 @@ export class NavbarComponent {
           
         }
     });
+    this.showMenu = false
   }
  
 }

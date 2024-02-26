@@ -11,3 +11,23 @@
         <h1>Report</h1>
     </button>
 </div>
+<div class="mobile"  *ngIf="showNavbar">
+    <div class="logo">
+        <h1>MWC ABUSE</h1>
+    </div>
+   <!--   -->
+    <i class="fa fa-bars" (click)="showMenuu()"></i>
+    <div class="menu" *ngIf="showMenu">
+        <div class="topp">
+            <i class="fa fa-times" (click)="closeMenu()"></i>
+        </div>
+        <div class="tabs">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </div>
+        <button class="reportBtn" (click)="navigateToReportPage()">
+            <h1>Report</h1>
+        </button>
+    </div>
+</div>

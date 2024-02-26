@@ -9,6 +9,13 @@ export class SidebarComponent {
 constructor(private router: Router){}
 activeOption: string = "";
 
+showMenu: boolean = false
+showMenuu(){
+  this.showMenu = true
+}
+closeMenu(){
+  this.showMenu = false
+}
   ngOnInit() {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {

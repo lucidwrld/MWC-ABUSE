@@ -232,3 +232,243 @@
         }
     }
 }
+@media (max-width: 400px) and (min-width: 300px) {
+    .reportPage{
+        background-color: #1e1e1e;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .main{
+            width: calc(100% - 40px);
+            height: 100%;
+            background-color: transparent;
+            margin: 0;
+            .title{
+                width: fit-content;
+                height: fit-content;
+                color: #fff;
+                font-size: 13px;
+                margin-top: 20px;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 700;
+            }
+            .subTitle{
+                width: fit-content;
+                height: fit-content;
+                color: #fff;
+                font-size: 13px;
+                margin-top: 30px;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 700;
+            }
+            .abuseCate{
+                width: 123px;
+                height: 22px;
+                border-radius: 24px;
+                background-color: #800080;
+                outline: none;
+                border: 0;
+                color: #fff;
+                font-size: 8px;
+                text-align: center;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 400;
+            }
+            .miniForm{
+                margin-top: 53px;
+                height: 535px;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr ;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+                gap: 0px;
+                .contForm{
+                    background-color: #1e1e1e;
+                    display: flex;
+                    height: fit-content;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .label{
+                        width: fit-content;
+                        height: fit-content;
+                        color: #fff;
+                        margin: 0;
+                        font-size: 12px;
+                        text-align: center;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-weight: 700;
+                    }
+                    .bottom{
+                        width: 100%;
+                        height: 33px;
+                        margin-top: 10px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        .details{
+                            width: 100%;
+                            height: 100%;
+                            background-color: #373737;
+                            outline: none;
+                            border: 0;
+                            padding: 0;
+                            border-radius: 24px;
+                            text-align: left;
+                            text-indent: 17px;
+                            color: #C0C0C0;
+                            font-size: 10px;
+                            font-family: 'Source Sans Pro', sans-serif;
+                            font-weight: 400;
+                        }
+                    }
+                    .bottomG{
+                        width: 100%;
+                        height: 33px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        .radi{
+                            color: #fff;
+                        margin: 0;
+                        font-size: 10px;
+                        text-align: center;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-weight: 400;
+                        input[type="radio"] {
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            appearance: none;
+                            border-radius: 50%;
+                            width: 10px;
+                            height: 10px;
+                            border: 2px solid #800080; /* Set your desired color */
+                            outline: none;
+                            display: inline-block;
+                            position: relative;
+                          }
+                          
+                          /* Change the color of the checked radio button */
+                          input[type="radio"]:checked {
+                            background-color: #800080; /* Set your desired color */
+                          }
+                        }
+                    }
+                }
+            }
+            .caseDescription{
+                margin-top: 0;
+                width: 100%;
+                height: 128px;
+                background-color: #373737;
+                outline: none;
+                border: 0;
+                border-radius: 24px;
+                padding-left: 0;
+                padding-right: 0;
+                color: #C0C0C0;
+                font-size: 10px;
+                text-indent: 20px;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 400;
+            }
+            .evidence{
+                width: 100%;
+                height: 198px;
+                margin-top: 27px;
+                background-color: #373737;
+                border-radius: 24px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .eviTitle{
+                    color: #fff;
+                    font-size: 12px;
+                    margin-left: 27px;
+                    text-align: left;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-weight: 700;
+                }
+                .eviDet{
+                    color: #fff;
+                    font-size: 9px;
+                    margin-left: 27px;
+                    text-align: left;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-weight: 400;
+                }
+                .custom-file-input {
+                    position: relative;
+                    display: inline-block;
+                  }
+                  
+                  /* Styles for the actual file input */
+                  .file-input {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                    width: 272px;
+                    height: 69px;
+                    cursor: pointer;
+                  }
+                  
+                  /* Styles for the custom button */
+                  .custom-button {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 27px;
+                    width: 130px;
+                    height: 32px;
+                    border-radius: 24px;
+                    background-color: #800080;
+                    color: #fff;
+                    font-size: 10px;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-weight: 700;
+                    cursor: pointer;
+                    .fa-upload{
+                        margin-left: 10px;
+                    }
+                  }
+            }
+            .end{
+                width: 100%;
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: right;
+                align-items: center;
+                margin-bottom: 30px;
+                height: 100px;
+                .submit{
+                    width: 107px;
+                    height: 37px;
+                    cursor: pointer;
+                    border-radius: 24px;
+                    background-color: #800080;
+                    outline: none;
+                    border: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .subText{
+                        margin: 0;
+                        color: #fff;
+                        font-size: 10px;
+                        text-align: center;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-weight: 400;
+    
+                    }
+                }
+            }
+        }
+    } 
+}

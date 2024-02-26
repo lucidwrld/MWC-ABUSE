@@ -11,3 +11,24 @@
         </button>
     </div>
 </div>
+<div class="mobile">
+    <i class="fa fa-bars" (click)="showMenuu()"></i>
+    <div class="menu" *ngIf="showMenu">
+        <div class="topp">
+            <i class="fa fa-times" (click)="closeMenu()"></i>
+        </div>
+        <div class="buttons">
+            <button class="btns" [ngClass]="{'active': activeOption === 'tao'}" (click)="navigateToDashPage()">
+                <i class="fa fa-tachometer-alt"></i>
+                <h1>Dashboard</h1>
+            </button>
+            <button class="btns" [ngClass]="{'active': activeOption === 'th'}" (click)="navigateToCasesPage()">
+                <i class="fa fa-th-list"></i>
+                <h1>Cases</h1>
+            </button>
+            <button class="logs" (click)="navigateToLoginPage()">
+                <h1>Logout</h1>
+            </button>
+        </div>
+    </div>
+</div>
