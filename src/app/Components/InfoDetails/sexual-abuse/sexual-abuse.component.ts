@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sexual-abuse',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./sexual-abuse.component.scss']
 })
 export class SexualAbuseComponent {
-
+  constructor(
+    private router: Router,
+  ) {
+    
+   }
+  navigateToInfoPage() {
+    this.router.navigate(['/info']);
+  }
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-stalking',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./stalking.component.scss']
 })
 export class StalkingComponent {
-
+  constructor(
+    private router: Router,
+  ) {
+    
+   }
+  navigateToInfoPage() {
+    this.router.navigate(['/info']);
+  }
 }

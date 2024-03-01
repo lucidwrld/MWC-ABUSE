@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-emotional-abuse',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./emotional-abuse.component.scss']
 })
 export class EmotionalAbuseComponent {
-
+  constructor(
+    private router: Router,
+  ) {
+    
+   }
+  navigateToInfoPage() {
+    this.router.navigate(['/info']);
+  }
 }
