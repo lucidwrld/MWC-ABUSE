@@ -6,7 +6,7 @@ import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls: ['./contact.component.scss', './contact-mobile.component.scss']
 })
 export class ContactComponent implements OnInit {
   form: FormGroup; // Declare form as a FormGroup

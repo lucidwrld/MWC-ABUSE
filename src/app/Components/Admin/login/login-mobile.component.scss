@@ -1,0 +1,167 @@
+
+@media (max-width:400px) and (min-width:300px) {
+    .loginPage{
+        display: none;
+    }
+    .mobile{
+        width: 100%;
+        height: 100%;
+        background-color: #800080;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        .logo{
+            width: calc(100% - 50px);
+            height: 312px;
+        }
+        .right{
+            background-color: transparent;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 3;
+            flex-direction: column;
+            align-items: center;
+            .top{
+                width: 100%;
+                margin-top: 40px;
+                height: 56px;
+                display: flex;
+                flex-direction: column;
+                align-items: end;
+                justify-content: space-between;
+                .titHead{
+                    color: #fff;
+                                font-size: 16px;
+                                font-family: 'Source Sans Pro', sans-serif;
+                                font-weight: 700;
+                                text-align: right;
+                                margin: 0;
+                                margin-right: 20px;
+                }
+                .miniTitHead{
+                    color: #fff;
+                                font-size: 8px;
+                                font-family: 'Source Sans Pro', sans-serif;
+                                font-weight: 700;
+                                text-align: right;
+                                margin: 0;
+                                margin-right: 20px;
+                }
+            }
+            .main{
+                margin-top: 50px;
+                width: calc(100% - 40px);
+                height: 434px;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                .header{
+                    color: #fff;
+                                font-size: 32px;
+                                font-family: 'Source Sans Pro', sans-serif;
+                                font-weight: 700;
+                                text-align: center;
+                                margin: 0;
+                }
+                .conForm{
+                    width: 100%;
+                    height: 91px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-top: 23px;
+                    .label{
+                        color: #fff;
+                                font-size: 16px;
+                                font-family: 'Source Sans Pro', sans-serif;
+                                font-weight: 400;
+                                text-align: left;
+                                margin: 0;
+                    }
+                    .input{
+                        width: 100%;
+                        height: 48px;
+                        border-radius: 24px;
+                        outline: none;
+                        border: 0;
+                        text-indent: 27px;
+                        background-color: #373737;
+                        color: #c0c0c0;
+                        font-size: 16px;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-weight: 400;
+                        text-align: left;
+                        margin: 0;
+                    }
+                }
+                .login{
+                    width: 100%;
+                    height: 56px;
+                    border-radius: 24px;
+                    border: 0;
+                    outline: none;
+                    background-color: #000;
+                    margin-top: 27px;
+                    color: #fff;
+                    font-size: 16px;
+                    cursor: pointer;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-weight: 700;
+                    text-align: center;
+                }
+                .home{
+                    width: 100%;
+                    height: 56px;
+                    border-radius: 24px;
+                    border: 0;
+                    outline: none;
+                    background-color: #fff;
+                    margin-top: 27px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    .hom{
+                    color: #000;
+                    font-size: 16px;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    font-weight: 700;
+                    text-align: center;
+                    margin: 0;
+                    }
+                }
+            }
+            .left{
+                background-color: #800080;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 40px;
+               
+                .title{
+                    color: #fff;
+                                    font-size: 16px;
+                                    font-family: 'Source Sans Pro', sans-serif;
+                                    font-weight: 700;
+                                    text-align: center;
+                                    margin: 0;
+                                    margin-top: 25px;
+                }
+                .miniTitle{
+                    color: #fff;
+                                    font-size: 8px;
+                                    font-family: 'Source Sans Pro', sans-serif;
+                                    font-weight: 700;
+                                    text-align: center;
+                                    margin: 0;
+                                    margin-top: 25px;
+                }
+            }
+        }
+    }
+}

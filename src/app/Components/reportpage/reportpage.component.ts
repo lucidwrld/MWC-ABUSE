@@ -7,7 +7,7 @@ import { AngularFireDatabase } from '@angular/fire/compat/database';
 @Component({
   selector: 'app-reportpage',
   templateUrl: './reportpage.component.html',
-  styleUrls: ['./reportpage.component.scss']
+  styleUrls: ['./reportpage.component.scss', './reportpage-mobile.component.scss']
 })
 export class ReportpageComponent implements OnInit {
 

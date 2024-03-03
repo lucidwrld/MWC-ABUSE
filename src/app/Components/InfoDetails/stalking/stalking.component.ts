@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-stalking',
   templateUrl: './stalking.component.html',
-  styleUrls: ['./stalking.component.scss']
+  styleUrls: ['./stalking.component.scss', './stalking-mobile.component.scss']
 })
 export class StalkingComponent {
   constructor(

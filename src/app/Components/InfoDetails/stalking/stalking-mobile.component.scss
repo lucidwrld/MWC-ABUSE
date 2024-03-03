@@ -1,0 +1,119 @@
+
+@media (max-width:400px) and (min-width:390px) {
+    .stalkingPage{
+        height: fit-content;.tp{
+            .btn{
+                
+                margin-left: 20px;
+               
+            }
+        }
+        .contain{
+            height: fit-content;
+            width: 100%;
+            .title{
+                font-size: 24px;
+                margin-left: 20px;
+            }
+            .top{
+                height: 171px;
+                width: 363px;
+                margin-top: 37px;
+                margin-left: 20px;
+                justify-content: left;
+                div{
+                    width: 338px;
+                    height: 151px;
+                }
+                .up{
+                    margin-top: 0px;
+                    margin-left: 0px;
+                }
+                .middle{
+                    margin-top: 6px;
+                    margin-left: 8px;
+                }
+                .bot{
+                    margin-top: 12px;
+                    margin-left: 16px;
+                    .note{
+                        width: calc(100% - 40px);
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        
+        .semiTop{
+            margin-top: 27px;
+            height: 107px;
+            width: calc(100% - 40px);
+            border-radius: 12px;
+            background-position-y: -20px;
+            .reportH1{
+                        font-size: 15px;
+            }
+            .minireportH1{
+               font-size: 10px;
+                        margin-top: 8px;
+            }
+        }
+        .middleTop{
+            margin-top: 33px;
+            height: fit-content;
+            width: calc(100% - 40px);
+            margin-bottom: 30px;
+            .content{
+                margin-top: 20px;
+                height: 100%;
+                width: calc(100% - 40px);
+                .headerr{
+                        font-size: 12px;
+                }
+                .miniHeader{
+                    font-size: 13px;
+                    margin-top: 18px;
+                }
+                .firstList{
+                    font-size: 10px;
+                    li{
+                    margin-left: 29px;
+                        .innerList{
+                            font-size: 10px;
+                            li{
+                            margin-left: 29px;
+                                
+                            }
+                        }
+                    }
+                }
+                .secondList{
+                    font-size: 10px;
+                    li{
+                    margin-left: 29px;
+                        .innerList{
+                            font-size: 10px;
+                            li{
+                            margin-left: 29px;
+                                
+                            }
+                        }
+                    }
+                }
+                .thirdList{
+                    font-size: 10px;
+                    margin-bottom: 10px;
+                    li{
+                    margin-left: 29px;
+                        .innerList{
+                            font-size: 10px;
+                            li{
+                            margin-left: 29px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

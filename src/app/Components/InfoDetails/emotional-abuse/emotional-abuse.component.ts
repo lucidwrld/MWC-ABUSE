@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-emotional-abuse',
   templateUrl: './emotional-abuse.component.html',
-  styleUrls: ['./emotional-abuse.component.scss']
+  styleUrls: ['./emotional-abuse.component.scss', './emotional-abuse-mobile.component.scss']
 })
 export class EmotionalAbuseComponent {
   constructor(

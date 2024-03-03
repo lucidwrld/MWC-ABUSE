@@ -6,7 +6,7 @@ import { Report } from 'src/app/report/report';
 @Component({
   selector: 'app-admindetails',
   templateUrl: './admindetails.component.html',
-  styleUrls: ['./admindetails.component.scss']
+  styleUrls: ['./admindetails.component.scss', './admin-details-mobile.component.scss']
 })
 export class AdmindetailsComponent implements OnInit {
   report!: Report ;

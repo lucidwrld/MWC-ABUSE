@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-spiritual-abuse',
   templateUrl: './spiritual-abuse.component.html',
-  styleUrls: ['./spiritual-abuse.component.scss']
+  styleUrls: ['./spiritual-abuse.component.scss', './spiritual-abuse-mobile.component.scss']
 })
 export class SpiritualAbuseComponent {
   constructor(

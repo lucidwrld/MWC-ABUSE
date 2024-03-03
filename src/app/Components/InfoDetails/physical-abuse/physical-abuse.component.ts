@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-physical-abuse',
   templateUrl: './physical-abuse.component.html',
-  styleUrls: ['./physical-abuse.component.scss']
+  styleUrls: ['./physical-abuse.component.scss', './physical-abuse-mobile.component.scss']
 })
 export class PhysicalAbuseComponent {
   

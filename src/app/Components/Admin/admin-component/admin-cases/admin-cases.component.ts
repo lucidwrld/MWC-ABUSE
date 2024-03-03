@@ -7,7 +7,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'app-admin-cases',
   templateUrl: './admin-cases.component.html',
-  styleUrls: ['./admin-cases.component.scss']
+  styleUrls: ['./admin-cases.component.scss', './admin-cases-mobile.component.scss']
 })
 export class AdminCasesComponent {
   p: number = 1;
@@ -52,13 +52,13 @@ export class AdminCasesComponent {
   get filteredCases() {
     let filtered = this.Report;
     if (this.searchText) {
-      filtered = this.filterBySearchText(filtered);
+      filtered = this.filterBySearchText(filtered.reverse());
     }
     else if(this.searchDate){
-      filtered = this.filterBySearchDate(filtered)
+      filtered = this.filterBySearchDate(filtered.reverse())
       
     }
-    return filtered;
+    return filtered.reverse();
   }
 
   filterBySearchText(cases: Report[]) {
