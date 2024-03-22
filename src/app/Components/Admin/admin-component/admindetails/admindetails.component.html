@@ -9,23 +9,23 @@
         <div class="middle" >
             <div class="left">
                 <div class="upper">
-                    <h1>Name: {{ report?.fullname }}</h1>
-                    <h1>Phone Number: {{ report?.phone }}</h1>
-                    <h1>Location: {{ report?.location }}</h1>
-                    <h1>Email: {{ report?.email }}</h1>
-                    <h1>Gender of Victim: {{ report?.gender }}</h1>
-                    <h1>Date of Birth: {{ report?.dateofb }}</h1>
-                    <h1>Abuse Type: {{ report?.category }}</h1>
-                    <h1>Date Filed: {{ report?.date }}</h1>
+                    <h1>Name: {{ report.fullname }}</h1>
+                    <h1>Phone Number: {{ report.phone }}</h1>
+                    <h1>Location: {{ report.location }}</h1>
+                    <h1>Email: {{ report.email }}</h1>
+                    <h1>Gender of Victim: {{ report.gender }}</h1>
+                    <h1>Date of Birth: {{ report.dateofb }}</h1>
+                    <h1>Abuse Type: {{ report.category }}</h1>
+                    <h1>Date Filed: {{ report.date }}</h1>
                 </div>
                 <div class="lower">
                     <h1>Case Description: </h1>
-                    <h1>{{ report?.casedescript }}</h1>
+                    <h1>{{ report.casedescript }}</h1>
                 </div>
             </div>
             <div class="right">
                 <div class="backimage"></div>
-                <img class="image" src="{{ report?.evidence }}"/>
+                <img class="image" src="{{ report.evidence }}"/>
             </div>
         </div>
     </div>
