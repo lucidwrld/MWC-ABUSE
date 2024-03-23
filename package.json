@@ -21,8 +21,11 @@
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
+    "@cloudinary/angular": "^1.0.0-beta.14",
+    "@cloudinary/angular-5.x": "^1.5.3",
     "@fortawesome/fontawesome-free": "^6.5.1",
     "@ngrx/store": "^17.1.0",
+    "cloudinary-core": "^2.13.0",
     "emailjs-com": "^3.2.0",
     "firebase": "^10.8.0",
     "ngx-toastr": "^18.0.0",
@@ -32,7 +35,7 @@
     "zone.js": "~0.13.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^16.2.7",
+    "@angular-devkit/build-angular": "^15.0.5",
     "@angular/cli": "^16.2.7",
     "@angular/compiler-cli": "^16.2.0",
     "@types/jasmine": "~4.3.0",

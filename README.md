@@ -25,3 +25,17 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+export interface DatabaseSnapshotExists<T> extends firebase.database.DataSnapshot {
+    exists(): true;
+    val(): T;
+    // forEach(action: (a: DatabaseSnapshot<T>) => boolean): boolean;
+    forEach(action: (a: firebase.database.DataSnapshot & { key: string }) => boolean | void): boolean;
+  }
+  export interface DatabaseSnapshotDoesNotExist<T> extends firebase.database.DataSnapshot {
+    exists(): false;
+    val(): null;
+    // forEach(action: (a: DatabaseSnapshot<T>) => boolean): boolean;
+    forEach(action: (a: firebase.database.DataSnapshot & { key: string }) => boolean | void): boolean;
+  }
